@@ -1,1 +1,98 @@
-Hello World
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<form action="https://www.baidu.com" method="get">
+
+<title>支付表单</title>
+
+<style type="text/css">
+	/*label{text-align: left;}
+	text{text-align: right;}*/
+	.cotainer
+	{position:relative;
+		margin-left: 100px;
+		width: 400px;
+	}
+	.container label
+	{
+		position: absolute;
+		right: 87%;
+		line-height: :22px;
+		text-align: center;
+	}
+	.container text
+	{
+		position: relative;
+		left: 25%;
+		line-height: :22px;
+		width: 200px;
+	}
+	.container input
+	{
+		position: relative;
+		left: 13%;
+		line-height: :22px;
+	}
+	.align-1{position: relative;left: 40%;}
+	.side-colum{font-size:15px;
+	padding: 10px;
+	border-left: 3px solid #ccc;}
+	</style>
+</head>
+<body>
+
+
+
+<h1>支付表单</h1>
+<h2>必填字段*</h2>
+<strong><h2>联系人信息</h2></strong>
+
+<div class="container">
+  &emsp;&emsp;&emsp;&emsp;<fieldset style="width: 400px; margin-left: 125px;"  >
+   <legend  >标题</legend>
+    <input type="radio" name="sex" value="男"  checked="checked">先生<p></p>
+    <input type="radio" name="sex" value="女">女士
+  </fieldset>
+
+ <p>
+ <div>
+ 	<label for="name">姓名：*</label>
+ 	<input type="text" align=left id="name" name="user_name"/>
+ </div>
+ </p>
+ <div>
+ 	<label for="mail">E-mail：*</label>
+ 	<input type="text" id="mail" />
+ </div>
+ <div>
+ <p><label for="mm">密码：*</label>
+ 	<input type="password" name="pwd" value="" size="20">
+ </div>
+
+ <strong><h2>支付信息</h2></strong>
+
+ <p>
+   <label for="kaleixin">卡类型：*</label>
+   &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp; <select name="kaxin"  right:80%;>
+     
+     <option value="1"  >Visa</option>
+     <option value="2"  selected>邮政</option>
+   </select>
+ </p>
+ 
+<p><div>
+ 	<label for="kahao">卡号：*</label>
+   <input type="text" id="kahao" />
+ </div></p>
+ <p><div>
+ 	<label for="kaday">卡有效日期：*</label>
+ 	<input type="data" id="kaday" />
+ </div></p>
+ 
+ <em><h3>输入格式 月/年</h3></em>
+<input type="submit" name="s1" value="确定支付">
+</div>
+<form/>
+</body>
+</html>
